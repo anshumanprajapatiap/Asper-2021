@@ -1,0 +1,253 @@
+
+.first{
+    background:black;
+    }
+    
+    nav{
+     font-size: 17px !important;
+    
+     font-family:google sans;
+        text-transform: none !important;
+        font-weight: normal;
+        font-weight: 400 !important;
+        background-color: transparent;
+        background-color: #fff;
+       
+    }
+    .tatti{
+      color: #fff !important;
+    }
+    .first a:hover{
+      color:gray !important;
+    }
+    .tatti2{
+      color: black !important;
+    }
+    #about a:hover{
+      color:gray !important;
+    }
+    .contnav{
+      padding-left: 0%!important;
+      padding-right: 0% !important;
+    }
+    nav{
+      letter-spacing: 0.5px;
+      padding-top: 20px;
+    }
+    .bg-dark{
+    background:black!important;
+    }
+    
+    #collapseExample{
+     position: absolute;
+     width:70%;
+      left: 10rem;
+      top: 20px;
+    
+    }
+    .searchposition{
+      background-color: black;
+    }
+    .clo{
+    position:absolute;
+    font-size: 30px;
+    right:2rem;
+    
+    position: absolute;
+     top: 24px;
+    
+    }
+  .btn-dark{
+    height: 6vh;
+  }  
+    .logonav{
+    padding:0.3rem;
+    }
+  .hel{
+  padding: 0%;
+  border: 0px;
+  
+  }
+  .sh{
+    max-height: 60vh;
+  }
+  .size{
+    min-height: 60vh;
+  
+  }
+  #last{
+    background-color:black;
+   min-height: 50vh;
+    
+  
+  }
+  .foot a{ 
+    display: inline-block;
+    
+    }  
+  a:hover{
+    text-decoration:none;
+    color: aliceblue;
+  }
+  
+  .yo{
+  font-size: 1rem;
+  font-style: normal;
+  margin-left: 0.5rem;
+  }
+  
+  .dog{
+    color: #687281;
+    font-weight: 400 !important;
+    margin-right: 1rem;
+  }
+  a li{
+    display: inline-block;
+  }
+  li a{
+    
+    display: block;
+    color: gray;
+    
+    }
+  a {text-decoration:none; 
+    display:block;
+    color: gray;
+    }    
+  .down{
+    margin-top: 38vh;
+    color: aliceblue;
+  }
+  .second{
+  background-color: gray;
+  height: 9vh;
+  
+  }
+  .btn1{
+    background-color: rgb(255, 13, 13);
+    color: wheat;
+    
+  }
+  .card-img-top
+  {
+      width:173px;
+      height:173px;
+      margin: 4%;
+      margin-bottom: 7%;
+  }
+  .card{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      padding: 26px;
+      border-radius: 2%;
+  }
+  .card-text{
+      font-size: 18px;
+      color: #9ba4a8; 
+  }
+  .date{
+      font-size: 16px;;
+  }
+  .card-profile-name
+  {
+      color:#9ba4a8;
+      font-weight: 600;
+  }
+  .card-prof-designation{
+      color:#9ba4a8;
+      font-size: 14px;
+  }
+  .btn{
+      font-size: 15px;
+      padding: 7px 35px;
+      border-radius: 3px;
+  }
+  .jb{
+  background-color: white;
+  }
+  .icon-flex, .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    font-size: 3rem;
+    width: 42px;
+    height: 42px;
+}
+.icon-wrapper i {
+    color: white;
+    font-size: 1.2rem;
+}
+.sec{
+    background-image: url("../images/hero-bg4.jpg");
+    background-size: cover;
+    height: 50vh;
+  }
+.dogg{
+    color: #687281;
+    font-weight: 400 !important;
+  }
+ .laline{
+   float: right;
+ } 
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+  @media(max-width:768px)
+  {
+  #about{
+      visibility:hidden;
+  }
+  .laline{
+    float: left;
+  }
+  .do{
+    padding-left: 1rem !important;
+  } 
+  }
+  ::-webkit-scrollbar {    
+    width: 15px;
+    height: 15px;
+    border-left: #ededed solid 1px;
+    background-color: #fcfcfc;
+    border-top: #ededed solid 1px;
+      }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background: #c7c7c7;
+    width: 15px;
+      background-clip: content-box;
+      border: 4px solid transparent;
+    border-radius: 10px;
+    }
+    
+      ::-webkit-scrollbar-button {   
+    display: none;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+      background-clip: content-box;
+      border: 4px solid transparent;
+    border-radius: 10px;
+    
+      }
+      @media(max-width:580px)
+      {
+        .contnav{
+          padding-left: 6px !important;
+          padding-right: 7px !important;
+        }
+        .sec{
+          padding-left: 10px;
+        }
+      }

@@ -1,0 +1,252 @@
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  color: #555;
+}
+
+
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #56000D;
+  color: white;
+}
+
+
+/*founder css*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+ #founder, .badgescard, .firstinfo {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+#founder {
+	 height: 100%;
+}
+ #founder {
+	 font-family: 'Open Sans', sans-serif;
+	 width: 100%;
+	 min-height: 100%;
+	 background: #1a1a1a;
+	 font-size: 16px;
+	 overflow: hidden;
+	
+}
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+ .content {
+	 position: relative;
+	 animation: animatop 2s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+ .fcard {
+	 width: 700px;
+	 min-height: 100px;
+	 padding: 20px;
+	 border-radius: 3px;
+	 background-color: white;
+	 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	 position: relative;
+	 overflow: hidden;
+}
+ .fcard:after {
+	 content: '';
+	 display: block;
+	 width: 190px;
+	 height: 300px;
+	 background: #56000D;;
+	 position: absolute;
+	 animation: rotatemagic 2s cubic-bezier(0.425, 2.04, 0.47, 1.105) 1s both;
+}
+ .badgescard {
+	 padding: 10px 20px;
+	 border-radius: 3px;
+	 background-color: #ececec;
+	 width: 680px;
+	 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+	 position: absolute;
+	 z-index: -1;
+	 left: 10px;
+	 bottom: 10px;
+	 animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+ .badgescard span {
+	 font-size: 1.6em;
+	 margin: 0px 6px;
+	 opacity: 0.6;
+}
+ .firstinfo {
+	 flex-direction: row;
+	 z-index: 2;
+	 position: relative;
+}
+ .firstinfo img {
+	 border-radius: 50%;
+	 width: 120px;
+	 height: 120px;
+}
+ .firstinfo .profileinfo {
+	 padding: 0px 20px;
+}
+ .firstinfo .profileinfo h1 {
+	 font-size: 1.8em;
+	 color: black;
+}
+ .firstinfo .profileinfo h3 {
+	 font-size: 1.2em;
+	 color: #56000D;;
+	 font-style: italic;
+}
+ .firstinfo .profileinfo p.bio {
+	 padding: 10px 0px;
+	 color: rgb(66, 55, 55);
+	 line-height: 1.2;
+	 font-style: initial;
+}
+ @keyframes animatop {
+	 0% {
+		 opacity: 0;
+		 bottom: -500px;
+	}
+	 100% {
+		 opacity: 1;
+		 bottom: 0px;
+	}
+}
+ @keyframes animainfos {
+	 0% {
+		 bottom: 10px;
+	}
+	 100% {
+		 bottom: -42px;
+	}
+}
+ @keyframes rotatemagic {
+	 0% {
+		 opacity: 0;
+		 transform: rotate(0deg);
+		 top: -24px;
+		 left: -253px;
+	}
+	 100% {
+		 transform: rotate(-30deg);
+		 top: -24px;
+		 left: -78px;
+	}
+}
+
+/*caraosuel csss*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+#them{
+    display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
